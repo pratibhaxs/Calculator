@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="m-2 text-center text-3xl font-bold">Calculator</div>
+    
+    <div class="flex justify-center">
+        
+        <input type="text" class="p-1 m-4 border-2 rounded" id="display">
+    </div>
+
+
+    <div class="flex justify-center">
+
+
+        <div class="grid grid-cols-4 gap-1">
+
+            <button class="button bg-gray-300 px-4 py-2 rounded">7</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">8</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">9</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">*</button>
+            
+            <button class="button bg-gray-300 px-4 py-2 rounded">4</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">5</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">6</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">/</button>
+
+            <button class="button bg-gray-300 px-4 py-2 rounded">1</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">2</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">3</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">-</button>
+            
+            <button class="button bg-gray-300 px-4 py-2 rounded">0</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">.</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">=</button>
+            <button class="button bg-gray-300 px-4 py-2 rounded">+</button>
+            
+            <button class="button col-span-4 bg-red-400 text-white">Clear</button>
+            
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
