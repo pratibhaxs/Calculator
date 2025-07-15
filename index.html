@@ -5,46 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="m-2 text-center text-3xl font-bold">Calculator</div>
-    
-    <div class="flex justify-center">
-        
-        <input type="text" class="p-1 m-4 border-2 rounded" id="display">
-    </div>
-
-
-    <div class="flex justify-center">
-
-
-        <div class="grid grid-cols-4 gap-1">
-
-            <button class="button bg-gray-300 px-4 py-2 rounded">7</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">8</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">9</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">*</button>
-            
-            <button class="button bg-gray-300 px-4 py-2 rounded">4</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">5</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">6</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">/</button>
-
-            <button class="button bg-gray-300 px-4 py-2 rounded">1</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">2</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">3</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">-</button>
-            
-            <button class="button bg-gray-300 px-4 py-2 rounded">0</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">.</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">=</button>
-            <button class="button bg-gray-300 px-4 py-2 rounded">+</button>
-            
-            <button class="button col-span-4 bg-red-400 text-white">Clear</button>
-            
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-xs mx-auto">
+        <div class="bg-white rounded-2xl shadow-2xl p-6">
+            <div class="text-center text-3xl font-bold mb-4">Calculator</div>
+            <input type="text" class="w-full text-right text-2xl p-4 mb-6 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 bg-gray-50" id="display" readonly>
+            <div class="grid grid-cols-4 gap-3">
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">7</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">8</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">9</button>
+                <button class="button bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-500 px-6 py-4 rounded-lg text-xl font-bold transition">*</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">4</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">5</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">6</button>
+                <button class="button bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-500 px-6 py-4 rounded-lg text-xl font-bold transition">/</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">1</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">2</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">3</button>
+                <button class="button bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-500 px-6 py-4 rounded-lg text-xl font-bold transition">-</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">0</button>
+                <button class="button bg-gray-200 hover:bg-gray-300 active:bg-gray-400 px-6 py-4 rounded-lg text-xl font-medium transition">.</button>
+                <button class="button bg-green-400 hover:bg-green-500 active:bg-green-600 text-white px-6 py-4 rounded-lg text-xl font-bold transition">=</button>
+                <button class="button bg-yellow-300 hover:bg-yellow-400 active:bg-yellow-500 px-6 py-4 rounded-lg text-xl font-bold transition">+</button>
+                <button class="button col-span-4 bg-red-400 hover:bg-red-500 active:bg-red-600 text-white px-6 py-4 rounded-lg text-xl font-bold mt-2 transition">Clear</button>
+            </div>
         </div>
     </div>
     <script src="javascript.js"></script>
